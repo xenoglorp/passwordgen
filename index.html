@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Start of Settings -->
+    <!-- pw: length, upper, lower, special,  -->
+    <label>Length of Password</label> 
+    <input type="number" id="pwLength" name="settings" min="6" max="64" value="6"><br>
+
+<input type="checkbox" id="pwUpper" name="settings">
+<label>Include uppercase characters </label><br>
+
+<input type="checkbox" id="pwLower" name="settings">
+<label>Include lowercase characters</label><br>
+
+<input type="checkbox" id="pwNum" name="settings">
+<label>Include numerical characters </label><br>
+
+<input type="checkbox" id="pwSpecial" name="settings">
+<label>Include special characters</label><br><br>
+
+<button id="genPass" onclick="generate();">Generate Password</button>
+
+<!-- End of Settings -->
+
+
+<!-- Start of Password Display -->
+<p id ="alert"></p>
+<p id="finalPassword"></p>
+<!-- Start of Password Display -->
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
